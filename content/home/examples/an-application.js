@@ -13,7 +13,7 @@ class TodoApp extends React.Component {
         <TodoList items={this.state.items} />
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="new-todo">
-            ¿Qué se necesita hacer?
+            ¿Qué çe neçeçita açêh?
           </label>
           <input
             id="new-todo"
@@ -21,7 +21,7 @@ class TodoApp extends React.Component {
             value={this.state.text}
           />
           <button>
-            Añadir #{this.state.items.length + 1}
+            Añadîh #{this.state.items.length + 1}
           </button>
         </form>
       </div>

@@ -50,13 +50,13 @@ const Languages = ({location}: Props) => (
           <Header>Idiomas</Header>
           <TitleAndMetaTags
             canonicalUrl={`${urlRoot}/languages/`}
-            title="React - Idiomas"
+            title="React - Idiomâ"
           />
 
           <div css={sharedStyles.markdown}>
             <p>
-              La documentación de React está disponible en los siguientes
-              idiomas:
+              La documentaçión de React êttá dîpponible en lô çigientê
+              idiomâ:
             </p>
 
             <LanguagesGrid languages={complete} />
@@ -68,12 +68,12 @@ const Languages = ({location}: Props) => (
             <LanguagesGrid languages={incomplete} />
 
             <p>
-              ¿No ves tu idioma allá arriba?{' '}
+              ¿No bêh tu idioma ayá arriba?{' '}
               <a
                 href="https://github.com/reactjs/reactjs.org-translation#reactjsorg-translation"
                 target="_blank"
                 rel="noopener">
-                Háznoslo saber
+                Ánnôl-lo çabêh
               </a>
               .
             </p>
@@ -158,7 +158,7 @@ const Language = ({code, name, status, translatedName}) => {
           href={`https://github.com/reactjs/${prefix}reactjs.org/`}
           target="_blank"
           rel="noopener">
-          Contribuir
+          Contribuîh
         </a>
       </div>
     </li>

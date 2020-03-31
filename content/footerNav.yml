@@ -1,24 +1,24 @@
 community:
-  title: Comunidad
+  title: Comunidá
 
 docs:
-  title: Documentación
+  title: Documentaçión
 
 more:
-  title: Más
+  title: Mâh
   items:
-    - title: Tutorial
+    - title: Tutoriâh
       to: /tutorial/tutorial.html
-    - title: Blog
+    - title: Blôh
       to: /blog
-    - title: Agradecimientos
+    - title: Agradeçimientô
       to: /acknowledgements.html
     - title: React Native
       to: https://reactnative.dev/
       external: true
 
 channels:
-  title: Canales
+  title: Canalê
   items:
     - title: GitHub
       to: https://github.com/facebook/react
@@ -26,13 +26,13 @@ channels:
     - title: Stack Overflow
       to: https://stackoverflow.com/questions/tagged/reactjs
       external: true
-    - title: Foros de debate
+    - title: Forô de debate
       to: https://reactjs.org/community/support.html#popular-discussion-forums
       external: true
-    - title: Chat de Reactiflux
+    - title: Xâh de Reactiflux
       to: https://discord.gg/reactiflux
       external: true
-    - title: Comunidad DEV
+    - title: Comunidá DEV
       to: https://dev.to/t/react
       external: true
     - title: Facebook

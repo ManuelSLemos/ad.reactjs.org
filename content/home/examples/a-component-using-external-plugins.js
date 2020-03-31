@@ -3,7 +3,7 @@ class MarkdownEditor extends React.Component {
     super(props);
     this.md = new Remarkable();
     this.handleChange = this.handleChange.bind(this);
-    this.state = { value: '¡Hola **mundo**!' };
+    this.state = { value: '¡Ola **mundo**!' };
   }
 
   handleChange(e) {
@@ -17,16 +17,16 @@ class MarkdownEditor extends React.Component {
   render() {
     return (
       <div className="MarkdownEditor">
-        <h3>Entrada</h3>
+        <h3>Entrá</h3>
         <label htmlFor="markdown-content">
-          Introduce algún texto en markdown
+          Introduçe argún têtto en markdown
         </label>
         <textarea
           id="markdown-content"
           onChange={this.handleChange}
           defaultValue={this.state.value}
         />
-        <h3>Salida</h3>
+        <h3>Çalida</h3>
         <div
           className="content"
           dangerouslySetInnerHTML={this.getRawMarkup()}

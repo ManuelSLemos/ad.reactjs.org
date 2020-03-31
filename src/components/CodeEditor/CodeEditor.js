@@ -62,12 +62,12 @@ class CodeEditor extends Component {
     if (showBabelErrorMessage) {
       errorMessage = (
         <span>
-          Babel no pudo ser cargado.
+          Babel no pudo çêh cargao.
           <br />
           <br />
-          Esto puede ser causado por un bloqueador de anuncios. Si estás usando
-          uno, considera añadir reactjs.org a la lista blanca y así los ejemplos
-          con código en vivo funcionarán.
+          Êtto puede çêh cauçao por un bloqueadôh de anunçiô. Çi êttâh uçando
+          uno, conçidera añadîh reactjs.org a la lîtta blanca y açí lô ehemplô
+          con código en bibo funçionarán.
         </span>
       );
     } else if (error != null) {
@@ -105,7 +105,7 @@ class CodeEditor extends Component {
                 color: colors.white,
               }}>
               <MetaTitle onDark={true}>
-                Editor en vivo de JSX
+                Editôh en bibo de JSX
                 <label
                   css={{
                     fontSize: 14,
@@ -206,7 +206,7 @@ class CodeEditor extends Component {
                   padding: '0 10px',
                   backgroundColor: colors.divider,
                 }}>
-                <MetaTitle>Resultado</MetaTitle>
+                <MetaTitle>Reçurtao</MetaTitle>
               </div>
               <div
                 id={containerNodeID}

@@ -1,10 +1,10 @@
 ---
-title: Basado en componentes
+title: Baçao en componentê
 order: 1
 ---
 
-Crea componentes encapsulados que manejen su propio estado,
-y conviértelos en interfaces de usuario complejas.
+Crea componentê encâççuláô que manehen çu propio êttao,
+y combiértelô en interfaçê de uçuario complehâ.
 
-Ya que la lógica de los componentes está escrita en JavaScript y no en plantillas,
-puedes pasar datos de forma sencilla a través de tu aplicación y mantener el estado fuera del DOM.
+Ya que la lóhica de lô componentê êttá êccrita en Habâccrîtt y no en plantiyâ,
+puedê paçâh datô de forma çençiya a trabêh de tu aplicaçión y mantenêh el êttao fuera der DOM.

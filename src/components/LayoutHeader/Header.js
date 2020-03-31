@@ -203,7 +203,7 @@ const Header = ({location}: {location: Location}) => (
                   display: 'none',
                 },
               }}>
-              Idiomas
+              Idiomâ
             </span>
           </Link>
           <a

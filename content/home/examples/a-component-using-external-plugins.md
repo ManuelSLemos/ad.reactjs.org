@@ -1,7 +1,7 @@
 ---
-title: Un componente usando plugins externos
+title: Un componente uçando pluhins êttênnô
 order: 3
 domid: markdown-example
 ---
 
-React permite interactuar con otras bibliotecas y frameworks. Este ejemplo usa **remarkable**, una biblioteca externa de Markdown, que convierte los valores de `<textarea>` en tiempo real.
+React permite interâttuâh con otrâ bibliotecâ y frameworks. Êtte ehemplo uça **remarkable**, una biblioteca êttênna de Markdown, que combierte lô balorê de  `<textarea>` en tiempo reâh.

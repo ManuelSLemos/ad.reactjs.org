@@ -1,7 +1,7 @@
 ---
-title: Un componente con estado
+title: Un componente con êttao
 order: 1
 domid: timer-example
 ---
 
-Además de obtener datos de entrada (a los que accedes a través de `this.props`), un componente puede tener datos en su estado interno (a los que accedes a través de `this.state`). Cuando los datos del estado de un componente cambian, se vuelve a invocar `render` con los nuevos valores en `this.state`.
+Ademâh de ôttenêh datô de entrá (a lô que âççedê a trabêh de `this.props`), un componente puede tenêh datô en çu êttao intênno (a lô que âççedê a trabêh de `this.state`). Cuando lô datô del êttao de un componente cambian, çe buerbe a imbocâh `render` con lô nuebô balorê en `this.state`.

@@ -2,7 +2,7 @@ class HelloMessage extends React.Component {
   render() {
     return (
       <div>
-        Hola {this.props.name}
+        Ola {this.props.name}
       </div>
     );
   }

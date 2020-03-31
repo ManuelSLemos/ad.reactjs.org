@@ -1,7 +1,7 @@
 ---
-title: Declarativo
+title: Declaratibo
 order: 0
 ---
-React te ayuda a crear interfaces de usuario interactivas de forma sencilla. Diseña vistas simples para cada estado en tu aplicación, y React se encargará de actualizar y renderizar de manera eficiente los componentes correctos cuando los datos cambien.
+React te ayuda a creâh interfaçê de uçuario interâttibâ de forma çençiya. Diçeña bîttâ çimplê pa cá êttao en tu aplicaçión, y React çe encargará de âttualiçâh y renderiçâh de manera efiçiente lô componentê corrêttô cuando lô datô cambien.
 
-Las vistas declarativas hacen que tu código sea más predecible, por lo tanto, fácil de depurar.
+Lâ bîttâ declaratibâ açen que tu código çea mâh predeçible, por lo tanto, fáçî de depurâh.

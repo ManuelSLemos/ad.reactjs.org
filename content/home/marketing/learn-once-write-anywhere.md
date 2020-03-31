@@ -1,9 +1,9 @@
 ---
-title: Aprende una vez, escríbelo donde sea
+title: Aprende una bêh, êccríbelo donde çea
 order: 2
 ---
 
-En React no dejamos fuera al resto de tus herramientas tecnológicas, así que podrás desarrollar nuevas características sin necesidad de volver a escribir el código existente.
+En React no dehamô fuera al rêtto de tû erramientâ tênnolóhicâ, açí que podrâh deçarroyâh nuebâ carâtterítticâ çin neçeçidá de borbêh a êccribîh er código êççîttente.
 
-React puede también renderizar desde el servidor usando Node, así como potencializar aplicaciones móviles usando
+React puede también renderiçâh dêdde er çerbidôh uçando Node, açí como potençialiçâh aplicaçionê móbilê uçando
 [React Native](https://reactnative.dev/).

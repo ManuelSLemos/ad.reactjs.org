@@ -46,7 +46,7 @@
     })
   </script><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/ad.reactjs.org/feed.xml"/><title data-react-helmet="true">Introducing the React Profiler – React Blog</title><link data-react-helmet="true" rel="canonical" href="https://es.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><link data-react-helmet="true" rel="alternate" href="https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html" hreflang="x-default"/><link data-react-helmet="true" rel="alternate" hreflang="en" href="https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><link data-react-helmet="true" rel="alternate" hreflang="ar" href="https://ar.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><link data-react-helmet="true" rel="alternate" hreflang="az" href="https://az.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><link data-react-helmet="true" rel="alternate" hreflang="es" href="https://es.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><link data-react-helmet="true" rel="alternate" hreflang="fr" href="https://fr.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><link data-react-helmet="true" rel="alternate" hreflang="it" href="https://it.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><link data-react-helmet="true" rel="alternate" hreflang="ja" href="https://ja.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><link data-react-helmet="true" rel="alternate" hreflang="ko" href="https://ko.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><link data-react-helmet="true" rel="alternate" hreflang="mn" href="https://mn.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><link data-react-helmet="true" rel="alternate" hreflang="pl" href="https://pl.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><link data-react-helmet="true" rel="alternate" hreflang="pt-br" href="https://pt-br.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><link data-react-helmet="true" rel="alternate" hreflang="ru" href="https://ru.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><link data-react-helmet="true" rel="alternate" hreflang="tr" href="https://tr.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><link data-react-helmet="true" rel="alternate" hreflang="uk" href="https://uk.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><link data-react-helmet="true" rel="alternate" hreflang="zh-hans" href="https://zh-hans.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><link data-react-helmet="true" rel="alternate" hreflang="zh-hant" href="https://zh-hant.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><meta data-react-helmet="true" property="og:title" content="Introducing the React Profiler – React Blog"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:url" content="https://es.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html"/><meta data-react-helmet="true" property="og:image" content="https://reactjs.org/logo-og.png"/><meta data-react-helmet="true" property="og:description" content="React 16.5 adds support for a new DevTools profiler plugin.
 This plugin uses React’s experimental Profiler API to collect timing information about each component that’s rendered in order to identify performance bottlenecks in React applications.
-It will be fully compatible with our upcoming time slicing and suspense features. This blog post covers the following topics: Profiling an application Reading performance data Browsing commits Filtering commits Flame chart Ranked chart Component chart…"/><meta data-react-helmet="true" property="fb:app_id" content="623268441017527"/><link rel="icon" href="/ad.reactjs.org/icons/icon-48x48.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link rel="manifest" href="/ad.reactjs.org/manifest.webmanifest"/><meta name="theme-color" content="#20232a"/><link rel="apple-touch-icon" sizes="48x48" href="/ad.reactjs.org/icons/icon-48x48.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link rel="apple-touch-icon" sizes="72x72" href="/ad.reactjs.org/icons/icon-72x72.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link rel="apple-touch-icon" sizes="96x96" href="/ad.reactjs.org/icons/icon-96x96.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link rel="apple-touch-icon" sizes="144x144" href="/ad.reactjs.org/icons/icon-144x144.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link rel="apple-touch-icon" sizes="192x192" href="/ad.reactjs.org/icons/icon-192x192.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link rel="apple-touch-icon" sizes="256x256" href="/ad.reactjs.org/icons/icon-256x256.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link rel="apple-touch-icon" sizes="384x384" href="/ad.reactjs.org/icons/icon-384x384.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link rel="apple-touch-icon" sizes="512x512" href="/ad.reactjs.org/icons/icon-512x512.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link as="script" rel="preload" href="/ad.reactjs.org/webpack-runtime-d431861b7df54b8a0e98.js"/><link as="script" rel="preload" href="/ad.reactjs.org/styles-b3b848542632cf53386b.js"/><link as="script" rel="preload" href="/ad.reactjs.org/app-6bc35bd538b9129bf93e.js"/><link as="script" rel="preload" href="/ad.reactjs.org/commons-498b3c21a5fca48c78cc.js"/><link as="script" rel="preload" href="/ad.reactjs.org/component---src-templates-blog-js-746d60aa04eb0364a25a.js"/><link as="fetch" rel="preload" href="/ad.reactjs.org/page-data/blog/2018/09/10/introducing-the-react-profiler.html/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/ad.reactjs.org/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="css-190hivd"><header class="css-19rsoyj"><div class="css-tctv7l"><div class="css-iiezwn"><a class="css-1ffs9v4" href="/ad.reactjs.org/"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" alt="" height="20"/><span class="css-184keb2">React</span></a><nav class="css-79txt3"><a class="css-hobwqm" href="/ad.reactjs.org/docs/getting-started.html">Documentación</a><a class="css-hobwqm" href="/ad.reactjs.org/tutorial/tutorial.html">Tutorial</a><a class="css-li68ai" href="/ad.reactjs.org/blog/">Blog<span class="css-2y24fj"></span></a><a class="css-hobwqm" href="/ad.reactjs.org/community/support.html">Comunidad</a></nav><form class="css-33zy79"><input type="search" id="algolia-doc-search" placeholder="Buscar" aria-label="Search docs" class="css-7dpbpx"/></form><div class="css-nypjs8"><a class="css-zvm479" href="/ad.reactjs.org/versions">v<!-- -->16.13.1</a><a class="css-1upvlu3" href="/ad.reactjs.org/languages"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d=" M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z " class="css-c4d79v"></path></svg> <span class="css-1rsw1pf">Idiomas</span></a><a href="https://github.com/facebook/react/" target="_blank" rel="noopener" class="css-6oo1gu">GitHub<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-19vhmgv"><path fill="currentColor" d="
+It will be fully compatible with our upcoming time slicing and suspense features. This blog post covers the following topics: Profiling an application Reading performance data Browsing commits Filtering commits Flame chart Ranked chart Component chart…"/><meta data-react-helmet="true" property="fb:app_id" content="623268441017527"/><link rel="icon" href="/ad.reactjs.org/icons/icon-48x48.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link rel="manifest" href="/ad.reactjs.org/manifest.webmanifest"/><meta name="theme-color" content="#20232a"/><link rel="apple-touch-icon" sizes="48x48" href="/ad.reactjs.org/icons/icon-48x48.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link rel="apple-touch-icon" sizes="72x72" href="/ad.reactjs.org/icons/icon-72x72.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link rel="apple-touch-icon" sizes="96x96" href="/ad.reactjs.org/icons/icon-96x96.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link rel="apple-touch-icon" sizes="144x144" href="/ad.reactjs.org/icons/icon-144x144.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link rel="apple-touch-icon" sizes="192x192" href="/ad.reactjs.org/icons/icon-192x192.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link rel="apple-touch-icon" sizes="256x256" href="/ad.reactjs.org/icons/icon-256x256.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link rel="apple-touch-icon" sizes="384x384" href="/ad.reactjs.org/icons/icon-384x384.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link rel="apple-touch-icon" sizes="512x512" href="/ad.reactjs.org/icons/icon-512x512.png?v=a95b1cba85b449d3cf230505f32a3d42"/><link as="script" rel="preload" href="/ad.reactjs.org/webpack-runtime-f5870117417584852c39.js"/><link as="script" rel="preload" href="/ad.reactjs.org/styles-b3b848542632cf53386b.js"/><link as="script" rel="preload" href="/ad.reactjs.org/app-6bc35bd538b9129bf93e.js"/><link as="script" rel="preload" href="/ad.reactjs.org/commons-801055aa49d773f24203.js"/><link as="script" rel="preload" href="/ad.reactjs.org/component---src-templates-blog-js-746d60aa04eb0364a25a.js"/><link as="fetch" rel="preload" href="/ad.reactjs.org/page-data/blog/2018/09/10/introducing-the-react-profiler.html/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/ad.reactjs.org/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="css-190hivd"><header class="css-19rsoyj"><div class="css-tctv7l"><div class="css-iiezwn"><a class="css-1ffs9v4" href="/ad.reactjs.org/"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" alt="" height="20"/><span class="css-184keb2">React</span></a><nav class="css-79txt3"><a class="css-hobwqm" href="/ad.reactjs.org/docs/getting-started.html">Documentaçión</a><a class="css-hobwqm" href="/ad.reactjs.org/tutorial/tutorial.html">Tutoriâh</a><a class="css-li68ai" href="/ad.reactjs.org/blog/">Blôh<span class="css-2y24fj"></span></a><a class="css-hobwqm" href="/ad.reactjs.org/community/support.html">Comunidá</a></nav><form class="css-33zy79"><input type="search" id="algolia-doc-search" placeholder="Buscar" aria-label="Search docs" class="css-7dpbpx"/></form><div class="css-nypjs8"><a class="css-zvm479" href="/ad.reactjs.org/versions">v<!-- -->16.13.1</a><a class="css-1upvlu3" href="/ad.reactjs.org/languages"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d=" M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z " class="css-c4d79v"></path></svg> <span class="css-1rsw1pf">Idiomâ</span></a><a href="https://github.com/facebook/react/" target="_blank" rel="noopener" class="css-6oo1gu">GitHub<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-19vhmgv"><path fill="currentColor" d="
       M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
       0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
     "></path><polygon fill="currentColor" points="
@@ -54,7 +54,7 @@ It will be fully compatible with our upcoming time slicing and suspense features
       14.9 62.8,22.9 71.5,22.9
       "></polygon></svg></a></div></div></div></header><div class="css-1tv5sxm css-15lkjjo"><div class="css-5v0gxc css-95xunl"><div class="css-12vsfho"><div class="css-tctv7l"><div class="css-10335ra"><article class="css-174qq1k"><header class="css-hgc6lu"><h1 class="css-1rwyxsf">Introducing the React Profiler</h1></header><div class="css-acl5jg">September 09, 2018<!-- --> <span>by<!-- --> <a href="https://github.com/bvaughn" class="css-1hs4uiz">Brian Vaughn</a></span></div><div class="css-124oy3v"><div class="css-15weewl"><p>React 16.5 adds support for a new DevTools profiler plugin.
 This plugin uses React’s <a href="https://github.com/reactjs/rfcs/pull/51" target="_blank" rel="nofollow noopener noreferrer">experimental Profiler API</a> to collect timing information about each component that’s rendered in order to identify performance bottlenecks in React applications.
-It will be fully compatible with our upcoming <a href="/ad.reactjs.org/blog/2018/03/01/sneak-peek-beyond-react-16.html">time slicing and suspense</a> features.</p>
+It will be fully compatible with our upcoming <a href="/blog/2018/03/01/sneak-peek-beyond-react-16.html">time slicing and suspense</a> features.</p>
 <p>This blog post covers the following topics:</p>
 <ul>
 <li><a href="#profiling-an-application">Profiling an application</a></li>
@@ -83,7 +83,7 @@ It will be fully compatible with our upcoming <a href="/ad.reactjs.org/blog/2018
 <p>
   <a
     class="gatsby-resp-image-link"
-    href="/ad.reactjs.org/static/4da6b55fc3c98de04c261cd902c14dc3/ad997/devtools-profiler-tab.png"
+    href="/static/4da6b55fc3c98de04c261cd902c14dc3/ad997/devtools-profiler-tab.png"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -102,11 +102,11 @@ It will be fully compatible with our upcoming <a href="/ad.reactjs.org/blog/2018
         style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="New DevTools "profiler" tab"
         title=""
-        src="/ad.reactjs.org/static/4da6b55fc3c98de04c261cd902c14dc3/1e088/devtools-profiler-tab.png"
-        srcset="/ad.reactjs.org/static/4da6b55fc3c98de04c261cd902c14dc3/65ed1/devtools-profiler-tab.png 210w,
-/ad.reactjs.org/static/4da6b55fc3c98de04c261cd902c14dc3/d10fb/devtools-profiler-tab.png 420w,
-/ad.reactjs.org/static/4da6b55fc3c98de04c261cd902c14dc3/1e088/devtools-profiler-tab.png 840w,
-/ad.reactjs.org/static/4da6b55fc3c98de04c261cd902c14dc3/ad997/devtools-profiler-tab.png 1012w"
+        src="/static/4da6b55fc3c98de04c261cd902c14dc3/1e088/devtools-profiler-tab.png"
+        srcset="/static/4da6b55fc3c98de04c261cd902c14dc3/65ed1/devtools-profiler-tab.png 210w,
+/static/4da6b55fc3c98de04c261cd902c14dc3/d10fb/devtools-profiler-tab.png 420w,
+/static/4da6b55fc3c98de04c261cd902c14dc3/1e088/devtools-profiler-tab.png 840w,
+/static/4da6b55fc3c98de04c261cd902c14dc3/ad997/devtools-profiler-tab.png 1012w"
         sizes="(max-width: 840px) 100vw, 840px"
       />
     </span>
@@ -124,7 +124,7 @@ Read more about how to use this bundle at <a href="https://fb.me/react-profiling
 <p>
   <a
     class="gatsby-resp-image-link"
-    href="/ad.reactjs.org/static/bae8d10e17f06eeb8c512c91c0153cff/ad997/start-profiling.png"
+    href="/static/bae8d10e17f06eeb8c512c91c0153cff/ad997/start-profiling.png"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -143,11 +143,11 @@ Read more about how to use this bundle at <a href="https://fb.me/react-profiling
         style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="Click "record" to start profiling"
         title=""
-        src="/ad.reactjs.org/static/bae8d10e17f06eeb8c512c91c0153cff/1e088/start-profiling.png"
-        srcset="/ad.reactjs.org/static/bae8d10e17f06eeb8c512c91c0153cff/65ed1/start-profiling.png 210w,
-/ad.reactjs.org/static/bae8d10e17f06eeb8c512c91c0153cff/d10fb/start-profiling.png 420w,
-/ad.reactjs.org/static/bae8d10e17f06eeb8c512c91c0153cff/1e088/start-profiling.png 840w,
-/ad.reactjs.org/static/bae8d10e17f06eeb8c512c91c0153cff/ad997/start-profiling.png 1012w"
+        src="/static/bae8d10e17f06eeb8c512c91c0153cff/1e088/start-profiling.png"
+        srcset="/static/bae8d10e17f06eeb8c512c91c0153cff/65ed1/start-profiling.png 210w,
+/static/bae8d10e17f06eeb8c512c91c0153cff/d10fb/start-profiling.png 420w,
+/static/bae8d10e17f06eeb8c512c91c0153cff/1e088/start-profiling.png 840w,
+/static/bae8d10e17f06eeb8c512c91c0153cff/ad997/start-profiling.png 1012w"
         sizes="(max-width: 840px) 100vw, 840px"
       />
     </span>
@@ -161,7 +161,7 @@ When you are finished profiling, click the “Stop” button.</p>
 <p>
   <a
     class="gatsby-resp-image-link"
-    href="/ad.reactjs.org/static/45619de03bed468869f7a0878f220586/ad997/stop-profiling.png"
+    href="/static/45619de03bed468869f7a0878f220586/ad997/stop-profiling.png"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -180,11 +180,11 @@ When you are finished profiling, click the “Stop” button.</p>
         style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="Click "stop" when you are finished profiling"
         title=""
-        src="/ad.reactjs.org/static/45619de03bed468869f7a0878f220586/1e088/stop-profiling.png"
-        srcset="/ad.reactjs.org/static/45619de03bed468869f7a0878f220586/65ed1/stop-profiling.png 210w,
-/ad.reactjs.org/static/45619de03bed468869f7a0878f220586/d10fb/stop-profiling.png 420w,
-/ad.reactjs.org/static/45619de03bed468869f7a0878f220586/1e088/stop-profiling.png 840w,
-/ad.reactjs.org/static/45619de03bed468869f7a0878f220586/ad997/stop-profiling.png 1012w"
+        src="/static/45619de03bed468869f7a0878f220586/1e088/stop-profiling.png"
+        srcset="/static/45619de03bed468869f7a0878f220586/65ed1/stop-profiling.png 210w,
+/static/45619de03bed468869f7a0878f220586/d10fb/stop-profiling.png 420w,
+/static/45619de03bed468869f7a0878f220586/1e088/stop-profiling.png 840w,
+/static/45619de03bed468869f7a0878f220586/ad997/stop-profiling.png 1012w"
         sizes="(max-width: 840px) 100vw, 840px"
       />
     </span>
@@ -206,7 +206,7 @@ Commits are displayed in a bar chart near the top of the profiler:</p>
 <p>
   <a
     class="gatsby-resp-image-link"
-    href="/ad.reactjs.org/static/bd72dec045515d59be51c944e902d263/d8f62/commit-selector.png"
+    href="/static/bd72dec045515d59be51c944e902d263/d8f62/commit-selector.png"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -225,10 +225,10 @@ Commits are displayed in a bar chart near the top of the profiler:</p>
         style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="Bar chart of profiled commits"
         title=""
-        src="/ad.reactjs.org/static/bd72dec045515d59be51c944e902d263/d8f62/commit-selector.png"
-        srcset="/ad.reactjs.org/static/bd72dec045515d59be51c944e902d263/65ed1/commit-selector.png 210w,
-/ad.reactjs.org/static/bd72dec045515d59be51c944e902d263/d10fb/commit-selector.png 420w,
-/ad.reactjs.org/static/bd72dec045515d59be51c944e902d263/d8f62/commit-selector.png 601w"
+        src="/static/bd72dec045515d59be51c944e902d263/d8f62/commit-selector.png"
+        srcset="/static/bd72dec045515d59be51c944e902d263/65ed1/commit-selector.png 210w,
+/static/bd72dec045515d59be51c944e902d263/d10fb/commit-selector.png 420w,
+/static/bd72dec045515d59be51c944e902d263/d8f62/commit-selector.png 601w"
         sizes="(max-width: 601px) 100vw, 601px"
       />
     </span>
@@ -245,7 +245,7 @@ You can click on a bar (or the left/right arrow buttons) to select a different 
 In some cases you may end up with <em>too many commits</em> to easily process.
 The profiler offers a filtering mechanism to help with this.
 Use it to specify a threshold and the profiler will hide all commits that were <em>faster</em> than that value.</p>
-<p><img src="/ad.reactjs.org/683b9d860ef722e1505e5e629df7ef7e/filtering-commits.gif" alt="Filtering commits by time"></p>
+<p><img src="/683b9d860ef722e1505e5e629df7ef7e/filtering-commits.gif" alt="Filtering commits by time"></p>
 <h3 id="flame-chart"><a href="#flame-chart" aria-hidden class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Flame chart </h3>
 <p>The flame chart view represents the state of your application for a particular commit.
 Each bar in the chart represents a React component (e.g. <code class="gatsby-code-text">App</code>, <code class="gatsby-code-text">Nav</code>).
@@ -254,7 +254,7 @@ The size and color of the bar represents how long it took to render the componen
 <p>
   <a
     class="gatsby-resp-image-link"
-    href="/ad.reactjs.org/static/3046f500b9bfc052bde8b7b3b3cfc243/ad997/flame-chart.png"
+    href="/static/3046f500b9bfc052bde8b7b3b3cfc243/ad997/flame-chart.png"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -273,11 +273,11 @@ The size and color of the bar represents how long it took to render the componen
         style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="Example flame chart"
         title=""
-        src="/ad.reactjs.org/static/3046f500b9bfc052bde8b7b3b3cfc243/1e088/flame-chart.png"
-        srcset="/ad.reactjs.org/static/3046f500b9bfc052bde8b7b3b3cfc243/65ed1/flame-chart.png 210w,
-/ad.reactjs.org/static/3046f500b9bfc052bde8b7b3b3cfc243/d10fb/flame-chart.png 420w,
-/ad.reactjs.org/static/3046f500b9bfc052bde8b7b3b3cfc243/1e088/flame-chart.png 840w,
-/ad.reactjs.org/static/3046f500b9bfc052bde8b7b3b3cfc243/ad997/flame-chart.png 1012w"
+        src="/static/3046f500b9bfc052bde8b7b3b3cfc243/1e088/flame-chart.png"
+        srcset="/static/3046f500b9bfc052bde8b7b3b3cfc243/65ed1/flame-chart.png 210w,
+/static/3046f500b9bfc052bde8b7b3b3cfc243/d10fb/flame-chart.png 420w,
+/static/3046f500b9bfc052bde8b7b3b3cfc243/1e088/flame-chart.png 840w,
+/static/3046f500b9bfc052bde8b7b3b3cfc243/ad997/flame-chart.png 1012w"
         sizes="(max-width: 840px) 100vw, 840px"
       />
     </span>
@@ -298,12 +298,12 @@ The <code class="gatsby-code-text">Router</code> component was the “most expen
 Most of this time was due to two of its children, <code class="gatsby-code-text">Nav</code> (8.4ms) and <code class="gatsby-code-text">Route</code> (7.9ms).
 The rest of the time was divided between its remaining children or spent in the component’s own render method.</p>
 <p>You can zoom in or out on a flame chart by clicking on components:
-<img src="/ad.reactjs.org/39ba82394205242af7c37ccb3a631f4d/zoom-in-and-out.gif" alt="Click on a component to zoom in or out"></p>
+<img src="/39ba82394205242af7c37ccb3a631f4d/zoom-in-and-out.gif" alt="Click on a component to zoom in or out"></p>
 <p>Clicking on a component will also select it and show information in the right side panel which includes its <code class="gatsby-code-text">props</code> and <code class="gatsby-code-text">state</code> at the time of this commit.
 You can drill into these to learn more about what the component actually rendered during the commit:</p>
-<p><img src="/ad.reactjs.org/1f4d023f1a0f281386625f28df87c78f/props-and-state.gif" alt="Viewing a component&#x27;s props and state for a commit"></p>
+<p><img src="/1f4d023f1a0f281386625f28df87c78f/props-and-state.gif" alt="Viewing a component&#x27;s props and state for a commit"></p>
 <p>In some cases, selecting a component and stepping between commits may also provide a hint as to <em>why</em> the component rendered:</p>
-<p><img src="/ad.reactjs.org/cc2a8b37bbce52c49a11c2f8e55dccbc/see-which-props-changed.gif" alt="Seeing which values changed between commits"></p>
+<p><img src="/cc2a8b37bbce52c49a11c2f8e55dccbc/see-which-props-changed.gif" alt="Seeing which values changed between commits"></p>
 <p>The above image shows that <code class="gatsby-code-text">state.scrollOffset</code> changed between commits.
 This is likely what caused the <code class="gatsby-code-text">List</code> component to re-render.</p>
 <h3 id="ranked-chart"><a href="#ranked-chart" aria-hidden class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ranked chart </h3>
@@ -313,7 +313,7 @@ The chart is ordered so that the components which took the longest to render are
 <p>
   <a
     class="gatsby-resp-image-link"
-    href="/ad.reactjs.org/static/0c81347535e28c9cdef0e94fab887b89/ad997/ranked-chart.png"
+    href="/static/0c81347535e28c9cdef0e94fab887b89/ad997/ranked-chart.png"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -332,11 +332,11 @@ The chart is ordered so that the components which took the longest to render are
         style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="Example ranked chart"
         title=""
-        src="/ad.reactjs.org/static/0c81347535e28c9cdef0e94fab887b89/1e088/ranked-chart.png"
-        srcset="/ad.reactjs.org/static/0c81347535e28c9cdef0e94fab887b89/65ed1/ranked-chart.png 210w,
-/ad.reactjs.org/static/0c81347535e28c9cdef0e94fab887b89/d10fb/ranked-chart.png 420w,
-/ad.reactjs.org/static/0c81347535e28c9cdef0e94fab887b89/1e088/ranked-chart.png 840w,
-/ad.reactjs.org/static/0c81347535e28c9cdef0e94fab887b89/ad997/ranked-chart.png 1012w"
+        src="/static/0c81347535e28c9cdef0e94fab887b89/1e088/ranked-chart.png"
+        srcset="/static/0c81347535e28c9cdef0e94fab887b89/65ed1/ranked-chart.png 210w,
+/static/0c81347535e28c9cdef0e94fab887b89/d10fb/ranked-chart.png 420w,
+/static/0c81347535e28c9cdef0e94fab887b89/1e088/ranked-chart.png 840w,
+/static/0c81347535e28c9cdef0e94fab887b89/ad997/ranked-chart.png 1012w"
         sizes="(max-width: 840px) 100vw, 840px"
       />
     </span>
@@ -358,7 +358,7 @@ The color and height of each bar corresponds to how long the component took to r
 <p>
   <a
     class="gatsby-resp-image-link"
-    href="/ad.reactjs.org/static/d71275b42c6109e222fbb0932a0c8c09/ad997/component-chart.png"
+    href="/static/d71275b42c6109e222fbb0932a0c8c09/ad997/component-chart.png"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -377,11 +377,11 @@ The color and height of each bar corresponds to how long the component took to r
         style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="Example component chart"
         title=""
-        src="/ad.reactjs.org/static/d71275b42c6109e222fbb0932a0c8c09/1e088/component-chart.png"
-        srcset="/ad.reactjs.org/static/d71275b42c6109e222fbb0932a0c8c09/65ed1/component-chart.png 210w,
-/ad.reactjs.org/static/d71275b42c6109e222fbb0932a0c8c09/d10fb/component-chart.png 420w,
-/ad.reactjs.org/static/d71275b42c6109e222fbb0932a0c8c09/1e088/component-chart.png 840w,
-/ad.reactjs.org/static/d71275b42c6109e222fbb0932a0c8c09/ad997/component-chart.png 1012w"
+        src="/static/d71275b42c6109e222fbb0932a0c8c09/1e088/component-chart.png"
+        srcset="/static/d71275b42c6109e222fbb0932a0c8c09/65ed1/component-chart.png 210w,
+/static/d71275b42c6109e222fbb0932a0c8c09/d10fb/component-chart.png 420w,
+/static/d71275b42c6109e222fbb0932a0c8c09/1e088/component-chart.png 840w,
+/static/d71275b42c6109e222fbb0932a0c8c09/ad997/component-chart.png 1012w"
         sizes="(max-width: 840px) 100vw, 840px"
       />
     </span>
@@ -394,12 +394,12 @@ It also shows that each time it rendered, it was the most “expensive” compon
 <p>To view this chart, either double-click on a component <em>or</em> select a component and click on the blue bar chart icon in the right detail pane.
 You can return to the previous chart by clicking the “x” button in the right detail pane.
 You can also double click on a particular bar to view more information about that commit.</p>
-<p><img src="/ad.reactjs.org/99cb4321ded8eb0c21ae5fc673878563/see-all-commits-for-a-fiber.gif" alt="How to view all renders for a specific component"></p>
+<p><img src="/99cb4321ded8eb0c21ae5fc673878563/see-all-commits-for-a-fiber.gif" alt="How to view all renders for a specific component"></p>
 <p>If the selected component did not render at all during the profiling session, the following message will be shown:</p>
 <p>
   <a
     class="gatsby-resp-image-link"
-    href="/ad.reactjs.org/static/8eb0c37a13353ef5d9e61ae8fc040705/ad997/no-render-times-for-selected-component.png"
+    href="/static/8eb0c37a13353ef5d9e61ae8fc040705/ad997/no-render-times-for-selected-component.png"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -418,11 +418,11 @@ You can also double click on a particular bar to view more information about tha
         style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="No render times for the selected component"
         title=""
-        src="/ad.reactjs.org/static/8eb0c37a13353ef5d9e61ae8fc040705/1e088/no-render-times-for-selected-component.png"
-        srcset="/ad.reactjs.org/static/8eb0c37a13353ef5d9e61ae8fc040705/65ed1/no-render-times-for-selected-component.png 210w,
-/ad.reactjs.org/static/8eb0c37a13353ef5d9e61ae8fc040705/d10fb/no-render-times-for-selected-component.png 420w,
-/ad.reactjs.org/static/8eb0c37a13353ef5d9e61ae8fc040705/1e088/no-render-times-for-selected-component.png 840w,
-/ad.reactjs.org/static/8eb0c37a13353ef5d9e61ae8fc040705/ad997/no-render-times-for-selected-component.png 1012w"
+        src="/static/8eb0c37a13353ef5d9e61ae8fc040705/1e088/no-render-times-for-selected-component.png"
+        srcset="/static/8eb0c37a13353ef5d9e61ae8fc040705/65ed1/no-render-times-for-selected-component.png 210w,
+/static/8eb0c37a13353ef5d9e61ae8fc040705/d10fb/no-render-times-for-selected-component.png 420w,
+/static/8eb0c37a13353ef5d9e61ae8fc040705/1e088/no-render-times-for-selected-component.png 840w,
+/static/8eb0c37a13353ef5d9e61ae8fc040705/ad997/no-render-times-for-selected-component.png 1012w"
         sizes="(max-width: 840px) 100vw, 840px"
       />
     </span>
@@ -436,7 +436,7 @@ You can also double click on a particular bar to view more information about tha
 <p>
   <a
     class="gatsby-resp-image-link"
-    href="/ad.reactjs.org/static/a91a39ac076b71aa7a202aaf46f8bd5a/ad997/interactions.png"
+    href="/static/a91a39ac076b71aa7a202aaf46f8bd5a/ad997/interactions.png"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -455,11 +455,11 @@ You can also double click on a particular bar to view more information about tha
         style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="The interactions panel"
         title=""
-        src="/ad.reactjs.org/static/a91a39ac076b71aa7a202aaf46f8bd5a/1e088/interactions.png"
-        srcset="/ad.reactjs.org/static/a91a39ac076b71aa7a202aaf46f8bd5a/65ed1/interactions.png 210w,
-/ad.reactjs.org/static/a91a39ac076b71aa7a202aaf46f8bd5a/d10fb/interactions.png 420w,
-/ad.reactjs.org/static/a91a39ac076b71aa7a202aaf46f8bd5a/1e088/interactions.png 840w,
-/ad.reactjs.org/static/a91a39ac076b71aa7a202aaf46f8bd5a/ad997/interactions.png 1012w"
+        src="/static/a91a39ac076b71aa7a202aaf46f8bd5a/1e088/interactions.png"
+        srcset="/static/a91a39ac076b71aa7a202aaf46f8bd5a/65ed1/interactions.png 210w,
+/static/a91a39ac076b71aa7a202aaf46f8bd5a/d10fb/interactions.png 420w,
+/static/a91a39ac076b71aa7a202aaf46f8bd5a/1e088/interactions.png 840w,
+/static/a91a39ac076b71aa7a202aaf46f8bd5a/ad997/interactions.png 1012w"
         sizes="(max-width: 840px) 100vw, 840px"
       />
     </span>
@@ -474,7 +474,7 @@ The colored dots along the row represent commits that were related to that inter
 <p>
   <a
     class="gatsby-resp-image-link"
-    href="/ad.reactjs.org/static/9847e78f930cb7cf2b0f9682853a5dbc/ad997/interactions-for-commit.png"
+    href="/static/9847e78f930cb7cf2b0f9682853a5dbc/ad997/interactions-for-commit.png"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -493,11 +493,11 @@ The colored dots along the row represent commits that were related to that inter
         style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="List of interactions for a commit"
         title=""
-        src="/ad.reactjs.org/static/9847e78f930cb7cf2b0f9682853a5dbc/1e088/interactions-for-commit.png"
-        srcset="/ad.reactjs.org/static/9847e78f930cb7cf2b0f9682853a5dbc/65ed1/interactions-for-commit.png 210w,
-/ad.reactjs.org/static/9847e78f930cb7cf2b0f9682853a5dbc/d10fb/interactions-for-commit.png 420w,
-/ad.reactjs.org/static/9847e78f930cb7cf2b0f9682853a5dbc/1e088/interactions-for-commit.png 840w,
-/ad.reactjs.org/static/9847e78f930cb7cf2b0f9682853a5dbc/ad997/interactions-for-commit.png 1012w"
+        src="/static/9847e78f930cb7cf2b0f9682853a5dbc/1e088/interactions-for-commit.png"
+        srcset="/static/9847e78f930cb7cf2b0f9682853a5dbc/65ed1/interactions-for-commit.png 210w,
+/static/9847e78f930cb7cf2b0f9682853a5dbc/d10fb/interactions-for-commit.png 420w,
+/static/9847e78f930cb7cf2b0f9682853a5dbc/1e088/interactions-for-commit.png 840w,
+/static/9847e78f930cb7cf2b0f9682853a5dbc/ad997/interactions-for-commit.png 1012w"
         sizes="(max-width: 840px) 100vw, 840px"
       />
     </span>
@@ -506,7 +506,7 @@ The colored dots along the row represent commits that were related to that inter
   </a>
     </p>
 <p>You can navigate between interactions and commits by clicking on them:</p>
-<p><img src="/ad.reactjs.org/7c66e7686b5242473c87b3d0b4576cf3/navigate-between-interactions-and-commits.gif" alt="Navigate between interactions and commits"></p>
+<p><img src="/7c66e7686b5242473c87b3d0b4576cf3/navigate-between-interactions-and-commits.gif" alt="Navigate between interactions and commits"></p>
 <p>The tracing API is still new and we will cover it in more detail in a future blog post.</p>
 <h2 id="troubleshooting"><a href="#troubleshooting" aria-hidden class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Troubleshooting </h2>
 <h3 id="no-profiling-data-has-been-recorded-for-the-selected-root"><a href="#no-profiling-data-has-been-recorded-for-the-selected-root" aria-hidden class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>No profiling data has been recorded for the selected root </h3>
@@ -514,7 +514,7 @@ The colored dots along the row represent commits that were related to that inter
 
   <a
     class="gatsby-resp-image-link"
-    href="/ad.reactjs.org/static/0755492a211f5bbb775285c0ff2fdfda/ad997/no-profiler-data-multi-root.png"
+    href="/static/0755492a211f5bbb775285c0ff2fdfda/ad997/no-profiler-data-multi-root.png"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -533,11 +533,11 @@ The colored dots along the row represent commits that were related to that inter
         style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="No profiling data has been recorded for the selected root"
         title=""
-        src="/ad.reactjs.org/static/0755492a211f5bbb775285c0ff2fdfda/1e088/no-profiler-data-multi-root.png"
-        srcset="/ad.reactjs.org/static/0755492a211f5bbb775285c0ff2fdfda/65ed1/no-profiler-data-multi-root.png 210w,
-/ad.reactjs.org/static/0755492a211f5bbb775285c0ff2fdfda/d10fb/no-profiler-data-multi-root.png 420w,
-/ad.reactjs.org/static/0755492a211f5bbb775285c0ff2fdfda/1e088/no-profiler-data-multi-root.png 840w,
-/ad.reactjs.org/static/0755492a211f5bbb775285c0ff2fdfda/ad997/no-profiler-data-multi-root.png 1012w"
+        src="/static/0755492a211f5bbb775285c0ff2fdfda/1e088/no-profiler-data-multi-root.png"
+        srcset="/static/0755492a211f5bbb775285c0ff2fdfda/65ed1/no-profiler-data-multi-root.png 210w,
+/static/0755492a211f5bbb775285c0ff2fdfda/d10fb/no-profiler-data-multi-root.png 420w,
+/static/0755492a211f5bbb775285c0ff2fdfda/1e088/no-profiler-data-multi-root.png 840w,
+/static/0755492a211f5bbb775285c0ff2fdfda/ad997/no-profiler-data-multi-root.png 1012w"
         sizes="(max-width: 840px) 100vw, 840px"
       />
     </span>
@@ -547,14 +547,14 @@ The colored dots along the row represent commits that were related to that inter
     </p>
 <p>This message indicates that no performance data was recorded for the root that’s selected in the “Elements” panel.
 In this case, try selecting a different root in that panel to view profiling information for that root:</p>
-<p><img src="/ad.reactjs.org/bdc30593d414b5c8d2ae92027ed11940/select-a-root-to-view-profiling-data.gif" alt="Select a root in the &#x22;Elements&#x22; panel to view its performance data"></p>
+<p><img src="/bdc30593d414b5c8d2ae92027ed11940/select-a-root-to-view-profiling-data.gif" alt="Select a root in the &#x22;Elements&#x22; panel to view its performance data"></p>
 <h3 id="no-timing-data-to-display-for-the-selected-commit"><a href="#no-timing-data-to-display-for-the-selected-commit" aria-hidden class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>No timing data to display for the selected commit </h3>
 <p>Sometimes a commit may be so fast that <code class="gatsby-code-text">performance.now()</code> doesn’t give DevTools any meaningful timing information.
 In this case, the following message will be shown:</p>
 <p>
   <a
     class="gatsby-resp-image-link"
-    href="/ad.reactjs.org/static/63b2fb6298feecb179272c467020ed95/ad997/no-timing-data-for-commit.png"
+    href="/static/63b2fb6298feecb179272c467020ed95/ad997/no-timing-data-for-commit.png"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -573,11 +573,11 @@ In this case, the following message will be shown:</p>
         style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="No timing data to display for the selected commit"
         title=""
-        src="/ad.reactjs.org/static/63b2fb6298feecb179272c467020ed95/1e088/no-timing-data-for-commit.png"
-        srcset="/ad.reactjs.org/static/63b2fb6298feecb179272c467020ed95/65ed1/no-timing-data-for-commit.png 210w,
-/ad.reactjs.org/static/63b2fb6298feecb179272c467020ed95/d10fb/no-timing-data-for-commit.png 420w,
-/ad.reactjs.org/static/63b2fb6298feecb179272c467020ed95/1e088/no-timing-data-for-commit.png 840w,
-/ad.reactjs.org/static/63b2fb6298feecb179272c467020ed95/ad997/no-timing-data-for-commit.png 1012w"
+        src="/static/63b2fb6298feecb179272c467020ed95/1e088/no-timing-data-for-commit.png"
+        srcset="/static/63b2fb6298feecb179272c467020ed95/65ed1/no-timing-data-for-commit.png 210w,
+/static/63b2fb6298feecb179272c467020ed95/d10fb/no-timing-data-for-commit.png 420w,
+/static/63b2fb6298feecb179272c467020ed95/1e088/no-timing-data-for-commit.png 840w,
+/static/63b2fb6298feecb179272c467020ed95/ad997/no-timing-data-for-commit.png 1012w"
         sizes="(max-width: 840px) 100vw, 840px"
       />
     </span>
@@ -588,7 +588,7 @@ In this case, the following message will be shown:</p>
 <h2 id="deep-dive-video"><a href="#deep-dive-video" aria-hidden class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Deep dive video </h2>
 <p>The following video demonstrates how the React profiler can be used to detect and improve performance bottlenecks in an actual React application.</p>
 <br>
-<div class="gatsby-resp-iframe-wrapper" style="padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; " > <iframe src="https://www.youtube-nocookie.com/embed/nySib7ipZdk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style=" position: absolute; top: 0; left: 0; width: 100%; height: 100%; "></iframe> </div></div><div class="css-1m173d1"><a href="https://github.com/reactjs/reactjs.org/tree/master/content/blog/2018-09-10-introducing-the-react-profiler.md" class="css-1x091gh">Edita esta página</a></div></div></article><div class="css-1kbu8hg"><div><div style="opacity:0;transition:opacity 0.5s ease" class="css-3ao3zf"><div style="transform:translate(0px, 40px);transition:transform 0.5s ease" class="css-p72dfi"><nav class="css-7stz2q css-1aai96l"><div><button aria-expanded="true" aria-controls="section_028129222832426115" class="css-1j8jxus"><div class="css-13zw18r">Recent Posts<svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" class="css-1mwek35"><g transform="translate(904.92214,-879.1482)"><path d="
+<div class="gatsby-resp-iframe-wrapper" style="padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; " > <iframe src="https://www.youtube-nocookie.com/embed/nySib7ipZdk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style=" position: absolute; top: 0; left: 0; width: 100%; height: 100%; "></iframe> </div></div><div class="css-1m173d1"><a href="https://github.com/reactjs/reactjs.org/tree/master/content/blog/2018-09-10-introducing-the-react-profiler.md" class="css-1x091gh">Edita esta página</a></div></div></article><div class="css-1kbu8hg"><div><div style="opacity:0;transition:opacity 0.5s ease" class="css-3ao3zf"><div style="transform:translate(0px, 40px);transition:transform 0.5s ease" class="css-p72dfi"><nav class="css-7stz2q css-1aai96l"><div><button aria-expanded="true" aria-controls="section_0289495971953718" class="css-1j8jxus"><div class="css-13zw18r">Recent Posts<svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" class="css-1mwek35"><g transform="translate(904.92214,-879.1482)"><path d="
           m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
           -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
           0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
@@ -597,7 +597,7 @@ In this case, the following message will be shown:</p>
           55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
           -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
           -104.0616 -231.873,-231.248 z
-        " fill="currentColor"></path></g></svg></div></button><ul id="section_028129222832426115" class="css-ts0qly"><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2020/02/26/react-v16.13.0.html">React v16.13.0</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2019/11/06/building-great-user-experiences-with-concurrent-mode-and-suspense.html">Building Great User Experiences with Concurrent Mode and Suspense</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2019/10/22/react-release-channels.html">Preparing for the Future with React Prereleases</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2019/08/15/new-react-devtools.html">Introduciendo las nuevas React DevTools</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2019/08/08/react-v16.9.0.html">React v16.9.0 y Actualización de la Hoja de Ruta</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2019/02/23/is-react-translated-yet.html">¿Ya está traducido React? ¡Sí! Sim! はい！</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2019/02/06/react-v16.8.0.html">React v16.8: The One With Hooks</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2018/12/19/react-v-16-7.html">React v16.7: No, este no es el que tiene Hooks</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2018/11/27/react-16-roadmap.html">React 16.x Roadmap</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2018/11/13/react-conf-recap.html">React Conf recap: Hooks, Suspense, and Concurrent Rendering</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/all.html">All posts ...</a></li></ul></div></nav></div></div><div role="button" tabindex="0" class="css-yx40kw"><div class="css-tctv7l"><div class="css-7ef8f8"><div class="css-1dgtft4"><svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="15" height="15" class="css-sg9l1i"><g transform="translate(904.92214,-879.1482)"><path d="
+        " fill="currentColor"></path></g></svg></div></button><ul id="section_0289495971953718" class="css-ts0qly"><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2020/02/26/react-v16.13.0.html">React v16.13.0</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2019/11/06/building-great-user-experiences-with-concurrent-mode-and-suspense.html">Building Great User Experiences with Concurrent Mode and Suspense</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2019/10/22/react-release-channels.html">Preparing for the Future with React Prereleases</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2019/08/15/new-react-devtools.html">Introduciendo las nuevas React DevTools</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2019/08/08/react-v16.9.0.html">React v16.9.0 y Actualización de la Hoja de Ruta</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2019/02/23/is-react-translated-yet.html">¿Ya está traducido React? ¡Sí! Sim! はい！</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2019/02/06/react-v16.8.0.html">React v16.8: The One With Hooks</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2018/12/19/react-v-16-7.html">React v16.7: No, este no es el que tiene Hooks</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2018/11/27/react-16-roadmap.html">React 16.x Roadmap</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/2018/11/13/react-conf-recap.html">React Conf recap: Hooks, Suspense, and Concurrent Rendering</a></li><li class="css-atv6j6"><a class="css-19pur11" href="/ad.reactjs.org/blog/all.html">All posts ...</a></li></ul></div></nav></div></div><div role="button" tabindex="0" class="css-yx40kw"><div class="css-tctv7l"><div class="css-7ef8f8"><div class="css-1dgtft4"><svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="15" height="15" class="css-sg9l1i"><g transform="translate(904.92214,-879.1482)"><path d="
           m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
           -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
           0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
@@ -615,7 +615,7 @@ In this case, the following message will be shown:</p>
           55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
           -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
           -104.0616 -231.873,-231.248 z
-        " fill="currentColor"></path></g></svg></div></div></div></div></div></div></div></div></div></div></div><footer class="css-vn0yrr"><div class="css-tctv7l"><div class="css-17njq4x"><div class="css-1q9mcvr"><div class="css-12bsqfj"><div class="css-1m3wp4q"><div class="css-krwajx">Documentación</div><a class="css-8l81zy" href="/ad.reactjs.org/docs/getting-started.html">Instalación</a><a class="css-8l81zy" href="/ad.reactjs.org/docs/hello-world.html">Conceptos principales</a><a class="css-8l81zy" href="/ad.reactjs.org/docs/accessibility.html">Guías avanzadas</a><a class="css-8l81zy" href="/ad.reactjs.org/docs/react-api.html">Referencia de la API</a><a class="css-8l81zy" href="/ad.reactjs.org/docs/hooks-intro.html">Hooks (nuevo)</a><a class="css-8l81zy" href="/ad.reactjs.org/docs/testing.html">Pruebas</a><a class="css-8l81zy" href="/ad.reactjs.org/docs/concurrent-mode-intro.html">Modo Concurrente (Experimental)</a><a class="css-8l81zy" href="/ad.reactjs.org/docs/how-to-contribute.html">Contribuir</a><a class="css-8l81zy" href="/ad.reactjs.org/docs/faq-ajax.html">Preguntas frecuentes</a></div></div><div class="css-12bsqfj"><div class="css-1m3wp4q"><div class="css-krwajx">Canales</div><a href="https://github.com/facebook/react" target="_blank" rel="noopener" class="css-8l81zy">GitHub<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv"><path fill="currentColor" d="
+        " fill="currentColor"></path></g></svg></div></div></div></div></div></div></div></div></div></div></div><footer class="css-vn0yrr"><div class="css-tctv7l"><div class="css-17njq4x"><div class="css-1q9mcvr"><div class="css-12bsqfj"><div class="css-1m3wp4q"><div class="css-krwajx">Documentaçión</div><a class="css-8l81zy" href="/ad.reactjs.org/docs/getting-started.html">Instalación</a><a class="css-8l81zy" href="/ad.reactjs.org/docs/hello-world.html">Conceptos principales</a><a class="css-8l81zy" href="/ad.reactjs.org/docs/accessibility.html">Guías avanzadas</a><a class="css-8l81zy" href="/ad.reactjs.org/docs/react-api.html">Referencia de la API</a><a class="css-8l81zy" href="/ad.reactjs.org/docs/hooks-intro.html">Hooks (nuevo)</a><a class="css-8l81zy" href="/ad.reactjs.org/docs/testing.html">Pruebas</a><a class="css-8l81zy" href="/ad.reactjs.org/docs/concurrent-mode-intro.html">Modo Concurrente (Experimental)</a><a class="css-8l81zy" href="/ad.reactjs.org/docs/how-to-contribute.html">Contribuir</a><a class="css-8l81zy" href="/ad.reactjs.org/docs/faq-ajax.html">Preguntas frecuentes</a></div></div><div class="css-12bsqfj"><div class="css-1m3wp4q"><div class="css-krwajx">Canalê</div><a href="https://github.com/facebook/react" target="_blank" rel="noopener" class="css-8l81zy">GitHub<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv"><path fill="currentColor" d="
       M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
       0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
     "></path><polygon fill="currentColor" points="
@@ -627,19 +627,19 @@ In this case, the following message will be shown:</p>
     "></path><polygon fill="currentColor" points="
       45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
       14.9 62.8,22.9 71.5,22.9
-      "></polygon></svg></a><a href="https://reactjs.org/community/support.html#popular-discussion-forums" target="_blank" rel="noopener" class="css-8l81zy">Foros de debate<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv"><path fill="currentColor" d="
+      "></polygon></svg></a><a href="https://reactjs.org/community/support.html#popular-discussion-forums" target="_blank" rel="noopener" class="css-8l81zy">Forô de debate<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv"><path fill="currentColor" d="
       M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
       0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
     "></path><polygon fill="currentColor" points="
       45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
       14.9 62.8,22.9 71.5,22.9
-      "></polygon></svg></a><a href="https://discord.gg/reactiflux" target="_blank" rel="noopener" class="css-8l81zy">Chat de Reactiflux<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv"><path fill="currentColor" d="
+      "></polygon></svg></a><a href="https://discord.gg/reactiflux" target="_blank" rel="noopener" class="css-8l81zy">Xâh de Reactiflux<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv"><path fill="currentColor" d="
       M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
       0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
     "></path><polygon fill="currentColor" points="
       45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
       14.9 62.8,22.9 71.5,22.9
-      "></polygon></svg></a><a href="https://dev.to/t/react" target="_blank" rel="noopener" class="css-8l81zy">Comunidad DEV<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv"><path fill="currentColor" d="
+      "></polygon></svg></a><a href="https://dev.to/t/react" target="_blank" rel="noopener" class="css-8l81zy">Comunidá DEV<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv"><path fill="currentColor" d="
       M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
       0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
     "></path><polygon fill="currentColor" points="
@@ -657,13 +657,13 @@ In this case, the following message will be shown:</p>
     "></path><polygon fill="currentColor" points="
       45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
       14.9 62.8,22.9 71.5,22.9
-      "></polygon></svg></a></div></div><div class="css-12bsqfj"><div class="css-1m3wp4q"><div class="css-krwajx">Comunidad</div><a href="https://github.com/facebook/react/blob/master/CODE_OF_CONDUCT.md" class="css-8l81zy">Código de Conducta<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv"><path fill="currentColor" d="
+      "></polygon></svg></a></div></div><div class="css-12bsqfj"><div class="css-1m3wp4q"><div class="css-krwajx">Comunidá</div><a href="https://github.com/facebook/react/blob/master/CODE_OF_CONDUCT.md" class="css-8l81zy">Código de Conducta<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv"><path fill="currentColor" d="
       M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
       0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
     "></path><polygon fill="currentColor" points="
       45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
       14.9 62.8,22.9 71.5,22.9
-      "></polygon></svg></a><a class="css-8l81zy" href="/ad.reactjs.org/community/support.html">Recursos de la comunidad</a></div></div><div class="css-12bsqfj"><div class="css-1m3wp4q"><div class="css-krwajx">Más</div><a class="css-8l81zy" href="/ad.reactjs.org/tutorial/tutorial.html">Tutorial</a><a class="css-8l81zy" href="/ad.reactjs.org/blog">Blog</a><a class="css-8l81zy" href="/ad.reactjs.org/acknowledgements.html">Agradecimientos</a><a href="https://reactnative.dev/" target="_blank" rel="noopener" class="css-8l81zy">React Native<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv"><path fill="currentColor" d="
+      "></polygon></svg></a><a class="css-8l81zy" href="/ad.reactjs.org/community/support.html">Recursos de la comunidad</a></div></div><div class="css-12bsqfj"><div class="css-1m3wp4q"><div class="css-krwajx">Mâh</div><a class="css-8l81zy" href="/ad.reactjs.org/tutorial/tutorial.html">Tutoriâh</a><a class="css-8l81zy" href="/ad.reactjs.org/blog">Blôh</a><a class="css-8l81zy" href="/ad.reactjs.org/acknowledgements.html">Agradeçimientô</a><a href="https://reactnative.dev/" target="_blank" rel="noopener" class="css-8l81zy">React Native<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv"><path fill="currentColor" d="
       M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
       0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
     "></path><polygon fill="currentColor" points="
@@ -685,4 +685,4 @@ In this case, the following message will be shown:</p>
       
       
       
-      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/2018/09/10/introducing-the-react-profiler.html";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-6bc35bd538b9129bf93e.js"],"component---src-templates-codepen-example-js":["/component---src-templates-codepen-example-js-4d8b215f86b4826f4d9d.js"],"component---src-templates-community-js":["/component---src-templates-community-js-f1a2c8c7f81c6dff1253.js"],"component---src-templates-docs-js":["/component---src-templates-docs-js-504a14c868e5e9a39f4f.js"],"component---src-templates-blog-js":["/component---src-templates-blog-js-746d60aa04eb0364a25a.js"],"component---src-templates-tutorial-js":["/component---src-templates-tutorial-js-748d23152bac76bc4917.js"],"component---src-pages-404-js":["/component---src-pages-404-js-ec177956336472a27073.js"],"component---src-pages-acknowledgements-html-js":["/component---src-pages-acknowledgements-html-js-ce62489012d2a13073d0.js"],"component---src-pages-blog-all-html-js":["/component---src-pages-blog-all-html-js-afeb5bc2e9c5fbf74309.js"],"component---src-pages-docs-error-decoder-html-js":["/component---src-pages-docs-error-decoder-html-js-4ac21bf8d8ae82294ba1.js"],"component---src-pages-index-js":["/component---src-pages-index-js-d61cbd4713f4f8c2da4d.js"],"component---src-pages-jsx-compiler-html-js":["/component---src-pages-jsx-compiler-html-js-286041a7a084b22e7f7a.js"],"component---src-pages-languages-js":["/component---src-pages-languages-js-915ae46ed72d5505dacf.js"],"component---src-pages-versions-js":["/component---src-pages-versions-js-e4b439ab9a7204fa4abf.js"]};/*]]>*/</script><script src="/ad.reactjs.org/component---src-templates-blog-js-746d60aa04eb0364a25a.js" async=""></script><script src="/ad.reactjs.org/commons-498b3c21a5fca48c78cc.js" async=""></script><script src="/ad.reactjs.org/app-6bc35bd538b9129bf93e.js" async=""></script><script src="/ad.reactjs.org/styles-b3b848542632cf53386b.js" async=""></script><script src="/ad.reactjs.org/webpack-runtime-d431861b7df54b8a0e98.js" async=""></script><script src="https://unpkg.com/docsearch.js@2.4.1/dist/cdn/docsearch.min.js"></script></body></html>
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/2018/09/10/introducing-the-react-profiler.html";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-6bc35bd538b9129bf93e.js"],"component---src-templates-codepen-example-js":["/component---src-templates-codepen-example-js-4d8b215f86b4826f4d9d.js"],"component---src-templates-community-js":["/component---src-templates-community-js-f1a2c8c7f81c6dff1253.js"],"component---src-templates-docs-js":["/component---src-templates-docs-js-504a14c868e5e9a39f4f.js"],"component---src-templates-blog-js":["/component---src-templates-blog-js-746d60aa04eb0364a25a.js"],"component---src-templates-tutorial-js":["/component---src-templates-tutorial-js-748d23152bac76bc4917.js"],"component---src-pages-404-js":["/component---src-pages-404-js-ec177956336472a27073.js"],"component---src-pages-acknowledgements-html-js":["/component---src-pages-acknowledgements-html-js-ce62489012d2a13073d0.js"],"component---src-pages-blog-all-html-js":["/component---src-pages-blog-all-html-js-afeb5bc2e9c5fbf74309.js"],"component---src-pages-docs-error-decoder-html-js":["/component---src-pages-docs-error-decoder-html-js-4ac21bf8d8ae82294ba1.js"],"component---src-pages-index-js":["/component---src-pages-index-js-6e53d02fa68965809d39.js"],"component---src-pages-jsx-compiler-html-js":["/component---src-pages-jsx-compiler-html-js-286041a7a084b22e7f7a.js"],"component---src-pages-languages-js":["/component---src-pages-languages-js-4c6e8f465e77eb64048a.js"],"component---src-pages-versions-js":["/component---src-pages-versions-js-e4b439ab9a7204fa4abf.js"]};/*]]>*/</script><script src="/ad.reactjs.org/component---src-templates-blog-js-746d60aa04eb0364a25a.js" async=""></script><script src="/ad.reactjs.org/commons-801055aa49d773f24203.js" async=""></script><script src="/ad.reactjs.org/app-6bc35bd538b9129bf93e.js" async=""></script><script src="/ad.reactjs.org/styles-b3b848542632cf53386b.js" async=""></script><script src="/ad.reactjs.org/webpack-runtime-f5870117417584852c39.js" async=""></script><script src="https://unpkg.com/docsearch.js@2.4.1/dist/cdn/docsearch.min.js"></script></body></html>

@@ -7,6 +7,7 @@
 'use strict';
 
 module.exports = {
+  pathPrefix: "/ad.reactjs.org",
   siteMetadata: {
     title: 'React: A JavaScript library for building user interfaces',
     siteUrl: 'https://es.reactjs.org',

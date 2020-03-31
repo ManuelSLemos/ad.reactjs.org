@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "bugs": {
-    "url": "https://github.com/reactjs/es.reactjs.org"
+    "url": "https://github.com/ManuelSLemos/ad.reactjs.org"
   },
   "dependencies": {
     "babel-eslint": "^8.0.1",
@@ -40,6 +40,7 @@
     "gatsby-source-filesystem": "^2.0.0",
     "gatsby-transformer-remark": "^2.0.0",
     "gatsby-transformer-sharp": "^2.3.18",
+    "gh-pages": "^2.2.0",
     "github-slugger": "^1.2.1",
     "glamor": "^2.20.40",
     "hex2rgba": "^0.0.1",
@@ -69,10 +70,11 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reactjs/es.reactjs.org.git"
+    "url": "git+https://github.com/ManuelSLemos/ad.reactjs.org"
   },
   "scripts": {
     "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "check-all": "npm-run-all prettier generate-ids --parallel lint flow",
     "ci-check": "npm-run-all prettier:diff --parallel lint flow",
     "dev": "gatsby develop -H 0.0.0.0",

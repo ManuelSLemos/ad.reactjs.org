@@ -1,89 +1,89 @@
-- title: Instalación
+- title: Îttalaçión
   items:
     - id: getting-started
-      title: Empezando
+      title: Empeçando
     - id: add-react-to-a-website
-      title: Agregar React a un sitio web
+      title: Agregâh React a un çitio wêh
     - id: create-a-new-react-app
-      title: Crear una nueva aplicación React
+      title: Creâh una nueba aplicaçión React
     - id: cdn-links
       title: CDN Links
     - id: release-channels
-      title: Canales de lanzamientos
-- title: Conceptos principales
+      title: Canalê de lançamientô
+- title: Conçêttô prinçipalê
   isOrdered: true
   items:
     - id: hello-world
-      title: Hola mundo
+      title: Ola mundo
     - id: introducing-jsx
-      title: Presentando JSX
+      title: Preçentando JSX
     - id: rendering-elements
-      title: Renderizando elementos
+      title: Renderiçando elementô
     - id: components-and-props
-      title: Componentes y propiedades
+      title: Componentê y propiedadê
     - id: state-and-lifecycle
-      title: Estado y ciclo de vida
+      title: Êttao y çiclo de bida
     - id: handling-events
-      title: Manejando eventos
+      title: Manehando ebentô
     - id: conditional-rendering
-      title: Renderizado condicional
+      title: Renderiçadôh
     - id: lists-and-keys
-      title: Listas y keys
+      title: Lîttâ y keys
     - id: forms
-      title: Formularios
+      title: Formulariô
     - id: lifting-state-up
-      title: Levantando el estado
+      title: Lebantando el êttao
     - id: composition-vs-inheritance
-      title: Composición vs. herencia
+      title: Compoçiçión vs. erençia
     - id: thinking-in-react
-      title: Pensando en React
-- title: Guías avanzadas
+      title: Pençando en React
+- title: Gíâ abançâh
   items:
     - id: accessibility
-      title: Accesibilidad
+      title: Âççeçibilidá
     - id: code-splitting
-      title: División de código
+      title: Dibiçión de código
     - id: context
-      title: Contexto
+      title: Contêtto
     - id: error-boundaries
-      title: Límites de errores
+      title: Límitê de errorê
     - id: forwarding-refs
-      title: Reenvío de refs
+      title: Reembío de refs
     - id: fragments
-      title: Fragmentos
+      title: Frâmmentô
     - id: higher-order-components
-      title: Componentes de orden superior
+      title: Componentê de orden çuperiôh
     - id: integrating-with-other-libraries
-      title: Integración con otras bibliotecas
+      title: Integraçión con otrâ bibliotecâ
     - id: jsx-in-depth
-      title: JSX en profundidad
+      title: JSX en profundidá
     - id: optimizing-performance
-      title: Optimizando el rendimiento
+      title: Ôttimiçando el rendimiento
     - id: portals
-      title: Portales
+      title: Portalê
     - id: profiler
       title: Profiler
     - id: react-without-es6
-      title: React sin ES6
+      title: React çin ES6
     - id: react-without-jsx
-      title: React sin JSX
+      title: React çin JSX
     - id: reconciliation
-      title: Reconciliación
+      title: Reconçiliaçión
     - id: refs-and-the-dom
-      title: Referencias y el DOM
+      title: Referençiâ y er DOM
     - id: render-props
       title: Render Props
     - id: static-type-checking
-      title: Comprobación de tipos estáticos
+      title: Comprobaçión de tipô êttáticô
     - id: strict-mode
-      title: Modo estricto
+      title: Modo êttrîtto
     - id: typechecking-with-proptypes
-      title: Verificación de tipos con PropTypes
+      title: Berificaçión de tipô con PropTypes
     - id: uncontrolled-components
-      title: Componentes no controlados
+      title: Componentê no controláô
     - id: web-components
       title: Web Components
-- title: Referencia de la API
+- title: Referençia de la API
   items:
     - id: react-api
       title: React
@@ -95,82 +95,82 @@
     - id: react-dom-server
       title: ReactDOMServer
     - id: dom-elements
-      title: Elementos DOM
+      title: Elementô DOM
     - id: events
       title: SyntheticEvent
     - id: test-utils
-      title: Utilidades para pruebas
+      title: Utilidadê pa pruebâ
     - id: test-renderer
-      title: Renderizador de prueba
+      title: Renderiçadôh de prueba
     - id: javascript-environment-requirements
-      title: Requerimientos del entorno de JS
+      title: Requerimientô del entônno de JS
     - id: glossary
-      title: Glosario
-- title: Hooks (nuevo)
+      title: Gloçario
+- title: Hooks (nuebo)
   isOrdered: true
   items:
       - id: hooks-intro
-        title: Presentando a los Hooks
+        title: Preçentando a lô Hooks
       - id: hooks-overview
-        title: Un vistazo a los Hooks
+        title: Un bîttaço a lô Hooks
       - id: hooks-state
-        title: Usando el Hook de estado
+        title: Uçando el Hook de êttao
       - id: hooks-effect
-        title: Usando el Hook de efecto
+        title: Uçando el Hook de efêtto
       - id: hooks-rules
-        title: Reglas de los Hooks
+        title: Reglâ de lô Hooks
       - id: hooks-custom
-        title: Construyendo tus propios Hooks
+        title: Côttruyendo tû propiô Hooks
       - id: hooks-reference
-        title: Referencia de la API de los Hooks
+        title: Referençia de la API de lô Hooks
       - id: hooks-faq
-        title: Preguntas frecuentes sobre Hooks
-- title: Pruebas
+        title: Preguntâ frecuentê çobre Hooks
+- title: Pruebâ
   items:
     - id: testing 
-      title: Visión general de las pruebas
+      title: Biçión henerâh de lâ pruebâ
     - id: testing-recipes
-      title: Recetas de pruebas
+      title: Reçetâ de pruebâ
     - id: testing-environments
-      title: Entornos de prueba
-- title: Modo Concurrente (Experimental)
+      title: Entônnô de prueba
+- title: Modo Concurrente (Êpperimentâh)
   isOrdered: true
   items:
     - id: concurrent-mode-intro
-      title: Introducción al Modo concurrente
+      title: Introdûççión ar Modo concurrente
     - id: concurrent-mode-suspense
-      title: Suspense para la carga de datos
+      title: Çûppençe pa la carga de datô
     - id: concurrent-mode-patterns
-      title: Patrones concurrentes en interfaces de usuario
+      title: Patronê concurrentê en interfaçê de uçuario
     - id: concurrent-mode-adoption
-      title: Adopción del Modo concurrente
+      title: Adôççión der Modo concurrente
     - id: concurrent-mode-reference
-      title: Referencia del API del modo concurrente
-- title: Contribuir
+      title: Referençia del API der modo concurrente
+- title: Contribuîh
   items:
     - id: how-to-contribute
-      title: Cómo contribuir
+      title: Cómo contribuîh
     - id: codebase-overview
-      title: Visión general de la base de código
+      title: Biçión henerâh de la baçe de código
     - id: implementation-notes
-      title: Notas de implementación
+      title: Notâ de implementaçión
     - id: design-principles
-      title: Principios de diseño
-- title: Preguntas frecuentes
+      title: Prinçipiô de diçeño
+- title: Preguntâ frecuentê
   items:
     - id: faq-ajax
       title: AJAX y APIs
     - id: faq-build
-      title: Babel, JSX y pasos de compilación
+      title: Babel, JSX y paçô de compilaçión
     - id: faq-functions
-      title: Pasando funciones a componentes
+      title: Paçando funçionê a componentê
     - id: faq-state
-      title: Estado del componente
+      title: Êttao der componente
     - id: faq-styling
-      title: Estilo y CSS
+      title: Êttilo y CSS
     - id: faq-structure
-      title: Estructura de archivos
+      title: Êttrûttura de arxibô
     - id: faq-versioning
-      title: Política de versiones
+      title: Política de berçionê
     - id: faq-internals
-      title: DOM virtual y detalles de implementación
+      title: DOM birtuâh y detayê de implementaçión

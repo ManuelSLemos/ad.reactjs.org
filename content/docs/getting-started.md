@@ -1,6 +1,6 @@
 ---
 id: getting-started
-title: Empezando
+title: Empeçando
 permalink: docs/getting-started.html
 next: add-react-to-a-website.html
 redirect_from:
@@ -18,110 +18,110 @@ redirect_from:
   - "docs/environments.html"
 ---
 
-Esta página es un resumen de la documentación de React y recursos relacionados.
+Êtta páhina êh un reçumen de la documentaçión de React y recurçô relaçionáô.
 
-**React** es una biblioteca Javascript para crear interfaces de usuario. Aprende todo de lo que trata React en [nuestra página principal](/) o [en este tutorial](/tutorial/tutorial.html).
+**React** êh una biblioteca Javascript pa creâh interfaçê de uçuario. Aprende tó de lo que trata React en [nuêttra páhina prinçipâh](/) o [en êtte tutoriâh](/tutorial/tutorial.html).
 
 ---
 
 - [Prueba React](#try-react)
 - [Aprende React](#learn-react)
-- [Mantente Informado](#staying-informed)
-- [Documentación por Versiones](#versioned-documentation)
-- [¿Algo hace falta?](#something-missing)
+- [Mantente Informao](#staying-informed)
+- [Documentaçión por Berçionê](#versioned-documentation)
+- [¿Argo açe farta?](#something-missing)
 
 ## Prueba React {#try-react}
 
-React ha sido diseñado desde su inicio para ser adoptado gradualmente, así puedes **usar tan poco o mucho de React como necesites.** Si quieres una prueba de React, agregar interactividad a una simple página HTML o empezar una aplicación compleja con React, los enlaces de esta sección te ayudarán a empezar.
+React a çido diçeñao dêdde çu iniçio pa çêh adôttao graduarmente, açí puedê **uçâh tan poco o muxo de React como neçeçitê.** Çi quierê una prueba de React, agregâh interâttibidá a una çimple páhina HTML o empeçâh una aplicaçión compleha con React, lô enlaçê de êtta çêççión te ayudarán a empeçâh.
 
-### Área de juegos {#online-playgrounds}
+### Área de huegô {#online-playgrounds}
 
-Si estás interesado en jugar un poco con React, puedes usar un editor de código online. Prueba la plantilla "Hola mundo" en [CodePen](codepen://hello-world), [CodeSandbox](https://codesandbox.io/s/new), [Glitch](https://glitch.com/edit/#!/remix/starter-react-template) o [Stackblitz](https://stackblitz.com/fork/react).
+Çi êttâh intereçao en hugâh un poco con React, puedê uçâh un editôh de código online. Prueba la plantiya "Ola mundo" en  [CodePen](codepen://hello-world), [CodeSandbox](https://codesandbox.io/s/new), [Glitch](https://glitch.com/edit/#!/remix/starter-react-template) o [Stackblitz](https://stackblitz.com/fork/react).
 
-Si prefieres usar tu propio editor, también puedes [descargar este archivo HTML](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html), editarlo, y abrirlo desde tu sistema de archivos al navegador. Esto realiza una transformación de código lenta, así que solo recomendamos esto para pruebas simples.
+Çi prefierê uçâh tu propio editôh, también puedê [descargar este archivo HTML](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html), editâl-lo, y abrîl-lo dêdde tu çîttema de arxibô ar nabegadôh. Êtto realiça una trâfformaçión de código lenta, açí que çolo recomendamô êtto pa pruebâ çimplê.
 
-### Agregar React a un sitio web. {#add-react-to-a-website}
+### Agregâh React a un çitio wêh. {#add-react-to-a-website}
 
-Puedes [agregar React a un HTML en un minuto](/docs/add-react-to-a-website.html). Puedes o bien ir agregándolo gradualmente, o mantenerlo contenido en unos cuantos *widgets* dinámicos.
+Puedê [agregâh React a un HTML en un minuto](/docs/add-react-to-a-website.html). Puedê o bien îh agregándolo graduarmente, o mantenêl-lo contenío en unô cuantô *widgets* dinámicô.
 
-### Crea una aplicación React nueva {#create-a-new-react-app}
+### Crea una aplicaçión React nueba {#create-a-new-react-app}
 
-Cuando se empieza un proyecto con React, [una simple página HTML con una etiqueta de tipo *script*](/docs/add-react-to-a-website.html) puede ser la mejor opción. Solo toma un minuto para configurarse.
+Cuando çe empieça un proyêtto con React, [una çimple páhina HTML con una etiqueta de tipo *script*](/docs/add-react-to-a-website.html) puede çêh la mehôh ôççión. Çolo toma un minuto pa configurarçe.
 
-A medida que tu aplicación crezca, puede que consideres una configuración más integrada. Hay una gran variedad de herramientas que recomendamos para aplicaciones más grandes. Cada una de ellas puede funcionar con poca configuración, y te permite tomar toda la ventaja de un ambiente React completo. [Aprende cómo](/docs/create-a-new-react-app.html).
+A medida que tu aplicaçión crêcca, puede que conçiderê una configuraçión mâh integrá. Ay una gran bariedá de erramientâ que recomendamô pa aplicaçionê mâh grandê. Cá una de eyâ puede funçionâh con poca configuraçión, y te permite tomâh toa la bentaha de un ambiente React completo. [Aprende cómo](/docs/create-a-new-react-app.html).
 
 ## Aprende React {#learn-react}
 
-Las personas vienen a React de distintos orígenes y de diferentes estilos de aprendizaje. Si prefieres un enfoque más teórico o práctico, esperamos que encuentres esta sección útil.
+Lâ perçonâ bienen a React de dîttintô oríhenê y de diferentê êttilô de aprendiçahe. Çi prefierê un enfoque mâh teórico o práttico, êpperamô que encuentrê êtta çêççión útî.
 
-* Si prefieres **aprender mediante práctica**, empieza con nuestro [tutorial práctico](/tutorial/tutorial.html).
+* Çi prefierê **aprendêh mediante práttica**, empieça con nuêttro [tutoriâh práttico](/tutorial/tutorial.html).
 
-* Si prefieres **aprender los conceptos paso a paso**, empieza con nuestra [guía a los conceptos principales](/docs/hello-world.html).
+* Çi prefierê **aprendêh lô conçêttô paço a paço**, empieça con nuêttro [gía a lô conçêttô prinçipalê](/docs/hello-world.html).
 
-Como cualquier tecnología desconocida, React tiene una curva de aprendizaje. Con práctica y un poco de paciencia, *obtendrás* habilidad sobre esta.
+Como cuarquiêh tênnolohía dêcconoçida, React tiene una curba de aprendiçahe. Con práttica y un poco de paçiençia, *ôttendrâh* abilidá çobre êtta.
 
-### Primeros ejemplos {#first-examples}
+### Primerô ehemplô {#first-examples}
 
-La [página principal de React](/) tiene unos cuantos ejemplos pequeños de React con un editor en vivo. Incluso si no sabes nada de React aún, prueba cambiando el código y mira cómo afecta el resultado.
+La [páhina prinçipâh de React](/) tiene unô cuantô ehemplô pequeñô de React con un editôh en bibo. Incluço çi no çabê ná de React aún, prueba cambiando er código y mira cómo afêtta el reçurtao.
 
-### React para principiantes {#react-for-beginners}
+### React pa prinçipiantê {#react-for-beginners}
 
-Si sientes que la documentación de React va a un ritmo mayor del que te sientes cómodo, mira este [resumen de React por Tania Rascia](https://www.taniarascia.com/getting-started-with-react/). Introduce los conceptos más importantes de React de una forma más detallada y amigable para los principiantes. Una vez que lo termines, intenta leer la documentación de nuevo.
+Çi çientê que la documentaçión de React ba a un rîmmo mayôh der que te çientê cómodo, mira êtte [reçumen de React por Tania Rascia](https://www.taniarascia.com/getting-started-with-react/). Introduçe lô conçêttô mâh importantê de React de una forma mâh detayá y amigable pa lô prinçipiantê. Una bêh que lo terminê, intenta leêh la documentaçión de nuebo.
 
 ### React para diseñadores {#react-for-designers}
 
-Si vienes con experiencia como diseñador, [estos recursos](https://reactfordesigners.com/) son un gran lugar para empezar.
+Çi bienê con êpperiençia como diçeñadôh, [êttô recurçô](https://reactfordesigners.com/) çon un gran lugâh pa empeçâh.
 
-### Recursos JavaScript {#javascript-resources}
+### Recurçô JavaScript {#javascript-resources}
 
-La documentación de React asume cierta familiaridad con la programación en Javascript. No necesitas ser un experto, pero es más difícil aprender React y Javascript al mismo tiempo.
+La documentaçión de React açume çierta familiaridá con la programaçión en Habâccrîtt. No neçeçitâ çêh un êpperto, pero êh mâh difíçî aprendêh React y Habâccrîtt ar mîmmo tiempo.
 
-Recomendamos pasar por este [resumen de Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript/A_re-introduction_to_JavaScript) para medir tu nivel de conocimiento. Te tomará entre treinta minutos y una hora, pero te sentirás más seguro aprendiendo React.
+Recomendamô paçâh por êtte [reçumen de Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript/A_re-introduction_to_JavaScript) pa medîh tu nibêh de conoçimiento. Te tomará entre treinta minutô y una ora, pero te çentirâh mâh çeguro aprendiendo React.
 
->Consejo
+>Conçeho
 >
->Cuando te sientas confundido sobre algo de Javascript, [MDN](https://developer.mozilla.org/es/docs/Web/JavaScript) y [javascript.info](https://javascript.info/) son sitios increíbles para revisar. También hay un [foro de asistencia por la comunidad](/community/support.html) donde puedes pedir ayuda.
+>Cuando te çientâ confundío çobre argo de Javascript, [MDN](https://developer.mozilla.org/es/docs/Web/JavaScript) y [javascript.info](https://javascript.info/) son çitiô increíblê pa rebiçâh. También ay un [foro de açîttençia por la comunidá](/community/support.html) donde puedê pedîh ayuda.
 
-### Tutorial práctico {#practical-tutorial}
+### Tutoriâh práttico {#practical-tutorial}
 
-Si prefieres **aprender mediante la práctica** mira nuestro [tutorial práctico](/tutorial/tutorial.html). En este tutorial  construimos el juego *tres en raya* en React. Puede que te sientas tentado a saltártelo porque no te interesa mucho el desarrollo de juegos, pero dale una oportunidad. Las técnicas que aprenderás en el tutorial son fundamentales para desarrollar cualquier aplicación con React, y dominarlas te dará un entendimiento mucho más profundo.
+Çi prefierê **aprendêh mediante la práttica** mira nuêttro [Tutoriâh práttico](/tutorial/tutorial.html). En êtte tutoriâh côttruimô er huego *trêh en raya* en React. Puede que te çientâ tentao a çartártelo porque no te intereça muxo er deçarroyo de huegô, pero dale una oportunidá. Lâ ténnicâ que aprenderâh en er tutoriâh çon fundamentalê pa deçarroyâh cuarquiêh aplicaçión con React, y dominâl-lâ te dará un entendimiento muxo mâh profundo.
 
-### Guía paso a paso {#step-by-step-guide}
+### Gía paço a paço {#step-by-step-guide}
 
-Si prefieres **aprender los conceptos paso a paso**, nuestra [guía a los conceptos principales](/docs/hello-world.html) es el mejor lugar para empezar. Cada capítulo en ella parte del conocimiento introducido en capítulos anteriores, por lo que no te perderás nada a medida que avanzas.
+Çi prefierê **aprendêh lô conçêttô paço a paço**, nuêttra [gía a lô conçêttô prinçipalê](/docs/hello-world.html) En êtte tutoriâh  côttruimô er huego *trêh en raya* en React. Puede que te çientâ tentao a çartártelo porque no te intereça muxo er deçarroyo de huegô, pero dale una oportunidá. Lâ ténnicâ que aprenderâh en er tutoriâh çon fundamentalê pa deçarroyâh cuarquiêh aplicaçión con React, y dominâl-lâ te dará un entendimiento muxo mâh profundo.
 
-### Pensando en React {#thinking-in-react}
+### Pençando en React {#thinking-in-react}
 
-Muchos usuarios de React dan crédito a leer [Pensando en React](/docs/thinking-in-react.html) como el momento en el que React finalmente tuvo "sentido" para ellos. Es probablemente el paso a paso más viejo, pero aún es igual de relevante.
+Muxô uçuariô de React dan crédito a leêh [Pençando en React](/docs/thinking-in-react.html) como er momento en er que React finarmente tubo "çentío" pa eyô. Êh probablemente er paço a paço mâh bieho, pero aún êh iguâh de relebante.
 
-### Cursos recomendados {#recommended-courses}
+### Curçô recomendáô {#recommended-courses}
 
-A veces las personas consiguen libros de terceros o recursos de video más útiles que la misma documentación. Mantenemos una [lista de recursos usualmente recomendados](/community/courses.html), algunos de ellos son gratis.
+A beçê lâ perçonâ conçigen librô de terçerô o recurçô de bideo mâh útilê que la mîmma documentaçión. Mantenemô una [lista de recursos usualmente recomendados](/community/courses.html), argunô de eyô çon gratî.
 
-### Conceptos avanzados {#advanced-concepts}
+### Conçêttô abançáô {#advanced-concepts}
 
-Una vez que te sientas cómodo con los [conceptos principales](/docs/hello-world.html) y hayas jugado con React un poco, puede que estés interesado en temas más avanzados. Esta sección te presentará funcionalidades poderosas, pero menos conocidas de React como [contexto](/docs/context.html) o [referencias](/docs/refs-and-the-dom.html).
+Una bêh que te çientâ cómodo con lô [conçêttô prinçipalê](/docs/hello-world.html) y ayâ hugao con React un poco, puede que êttêh intereçao en temâ mâh abançáô. Êtta çêççión te preçentará funçionalidadê poderoçâ, pero menô conoçidâ de React como [contêtto](/docs/context.html) o [referençiâ](/docs/refs-and-the-dom.html).
 
-### Referencia de la API {#api-reference}
+### Referençia de la API {#api-reference}
 
-Esta sección de la documentación es útil si quieres aprender detalles sobre una API de React en específico. Por ejemplo, [la referencia de React.Component](/docs/react-component.html) te puede dar detalles en cómo funciona `setState()`, y para qué sirven diferentes métodos del ciclo de vida del componente.
+Êtta çêççión de la documentaçión êh útî çi quierê aprendêh detayê çobre una API de React en êppeçífico. Por ehemplo, [la referençia de React.Component](/docs/react-component.html) te puede dâh detayê en cómo funçiona `setState()`, y pa qué çirben diferentê métôh der çiclo de bida der componente.
 
-### Glosario y preguntas frecuentes {#glossary-and-faq}
+### Gloçario y preguntâ frecuentê {#glossary-and-faq}
 
-El [glosario](/docs/glossary.html) contiene un resumen de los términos más comunes que verás en la documentación de React. También hay una sección de preguntas frecuentes dedicada a preguntas cortas y respuestas sobre temas comunes, incluyendo [realizar solicitudes con AJAX](/docs/faq-ajax.html), [estado de un componente](/docs/faq-state.html), y [estructura de archivos](/docs/faq-structure.html).
+Er [gloçario](/docs/glossary.html) contiene un reçumen de lô términô mâh comunê que berâh en la documentaçión de React. También ay una çêççión de preguntâ frecuentê dedicá a preguntâ cortâ y rêppuêttâ çobre temâ comunê, incluyendo [realiçâh çoliçitudê con AJAX](/docs/faq-ajax.html), [êttao de un componente](/docs/faq-state.html), y [êttrûttura de arxibô](/docs/faq-structure.html).
 
-## Mantente informado {#staying-informed}
+## Mantente informao {#staying-informed}
 
-El [Blog de React](/blog/) es la fuente oficial de actualizaciones por parte del equipo de React. Cualquier información importante, incluyendo notas sobre lanzamientos o notas de depreciación, serán puestas allí primero.
+Er [Blôh de React](/blog/) êh la fuente ofiçiâh de âttualiçaçionê por parte del equipo de React. Cuarquiêh informaçión importante, incluyendo notâ çobre lançamientô o notâ de depreçiaçión, çerán puêttâ ayí primero.
 
-También puedes seguir la [cuenta de @reactjs](https://twitter.com/reactjs) en Twitter, pero no te perderás de nada esencial si solo lees el blog.
+También puedê çegîh la [cuenta de @reactjs](https://twitter.com/reactjs) en Twitter, pero no te perderâh de ná eçençiâh çi çolo leê er blôh.
 
-No todos los lanzamientos de React ameritan su propia publicación en el blog, pero puedes encontrar una lista detallada de cambios para cada lanzamiento en el [archivo CHANGELOG.MD en el repositorio de React](https://github.com/facebook/react/blob/master/CHANGELOG.md), así como también en la página de [Lanzamientos](https://github.com/facebook/react/releases).
+No tôh lô lançamientô de React ameritan çu propia publicaçión en er blôh, pero puedê encontrâh una lîtta detayá de cambiô pa cá lançamiento en el [arxibo CHANGELOG.MD en el repoçitorio de React](https://github.com/facebook/react/blob/master/CHANGELOG.md), açí como también en la páhina de [Lançamientô](https://github.com/facebook/react/releases).
 
-## Documentación por versiones {#versioned-documentation}
+## Documentaçión por berçionê {#versioned-documentation}
 
-Esta documentación siempre refleja la última versión estable de React. Desde React 16, puedes encontrar versiones más antiguas de la documentación en una [página separada](/versions). Recuerda que la documentación para versiones más antiguas es una copia exacta a la del tiempo en que fue lanzada, por lo que no es constantemente actualizada.
+Êtta documentaçión çiempre refleha la úrtima berçión êttable de React. Dêdde React 16, puedê encontrâh berçionê mâh antiguâ de la documentaçión en una [página separada](/versions). Recuerda que la documentaçión pa berçionê mâh antiguâ êh una copia êççâtta a la der tiempo en que fue lançá, por lo que no êh côttantemente âttualiçá.
 
-## ¿Algo hace falta? {#something-missing}
+## ¿Argo açe farta? {#something-missing}
 
-Si algo hace falta en la documentación, o si estas confundido, por favor [abre un caso en el repositorio de la documentación](https://github.com/reactjs/reactjs.org/issues/new) con tus sugerencias para mejoras, o envía un tweet a la [cuenta de @reactjs](https://twitter.com/reactjs). ¡Nos encanta saber de ti!
+Çi argo açe farta en la documentaçión, o çi êttâ confundío, por fabôh [abre un caço en el repoçitorio de la documentaçión](https://github.com/reactjs/reactjs.org/issues/new) con tû çuherençiâ pa mehorâ, o embía un tweêh a la [cuenta de @reactjs](https://twitter.com/reactjs). ¡Nô encanta çabêh de ti!
